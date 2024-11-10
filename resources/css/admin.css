@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header{
+    height: 4rem;
+    width: 100%;
+    padding: 0 2rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 3rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-box{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.container-box .sidebar{
+    height: 100vh;
+    width: 100%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-box .sidebar .list-side{
+    margin: 1.5rem;
+}
+
+.container-box .sidebar .list-side a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.container-box .sidebar .list-side a:hover{
+    color: #5E55FA;
+    transition: 0.4s;
+}
+
+.container-box .content{
+    max-width: 90%;
+    margin: 2rem 5rem;
+    box-shadow: 1px 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-box .content h2{
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container-box .content .input{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    line-height: 3rem;
+}
+
+.container-box .content .input img{
+    width: 10rem;
+}
+
+.container-box .content .input input{
+    padding: 0.2rem 2rem;
+}
+
+.container-box .content .group{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.container-box .content .input select{
+    padding: 0.2rem 2rem;
+    height: 3.5rem;
+    width: 100%;
+}
+
+.container-box .content .btn-submit{
+    text-align: right;
+    margin: 2rem 5rem 3rem 0;
+}
+
+.container-box .content .btn-submit button{
+    height: 4rem;
+    width: 15rem;
+    border: 0;
+    background-color: rgb(2, 176, 37);
+    color: rgb(241, 240, 240);
+    border-radius: 1rem;
+}
+
+.container-box .content .list-product .title{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5% 15% 15% 10% 10% 5% 5% 10% 15% 10%;
+    margin: 2rem 2rem;
+}
+
+.container-box .content .list-product .title img{
+    width: 50%;
+}
+
+.container-box .content .list-collection .title{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5% 20% 10% 10% 10% 30% 10%;
+    margin: 2rem 2rem;
+    gap: 1rem;
+}
+
+.container-box .content .list-collection .title img{
+    width: 100%;
+}
+
+/* all order */
+.container-box .content-order{
+    width: 98%;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 1px 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-box .content-order h2{
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container-box .content-order .list-order .title{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5% 10% 15% 10% 15% 20% 15% 10%;
+    margin: 2rem 2rem;
+}
+
+/* order details */
+
+.container-box .content-order{
+    width: 90%;
+    margin: 2rem auto;
+    box-shadow: 1px 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-box .content-order h2{
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container-box .content-order .order-detail-column{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 5rem;
+    line-height: 3rem;
+    text-align: start;
+}
+
+.container-box .content-order .list-product .title{
+    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 5% 15% 20% 20% 5% 5% 10% 20%;
+    margin: 2rem 2rem;
+}
+
+.container-box .content-order .list-product .title img{
+    width: 50%;
+}
+
+.container-box .content-order .confirm-order{
+    margin: 3rem;
+    text-align: start;
+}
+
+.container-box .content-order .confirm-order select{
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.container-box .content-order .btn-confirm{
+    text-align: center;
+    margin: 3rem auto; 
+}
+
+.container-box .content-order .btn-confirm button{
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: rgb(2, 176, 37);
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.container-box .content-order .btn-confirm button:hover{
+    background-color: rgb(5, 199, 44);
+    transition: 0.4s;
+}
+
+/* all customer */
+.container-box .content-customer{
+    width: 98%;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 1px 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-box .content-customer h2{
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container-box .content-customer .list-customer .title{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5% 20% 15% 20% 10% 20% 10%;
+    margin: 2rem 2rem;
+}
+
+/* admin-login */
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login .box-login{
+    width: 40rem;
+    height: 34rem;
+    border: 1px solid;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.login .box-login h2{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.login .box-login .login-input-group .login-input{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    line-height: 3rem;
+}
+
+.login .box-login .login-input-group .login-input input{
+    padding: 0 1.5rem;
+}
+
+.login .box-login .login-input-group .btn-login{
+    text-align: center;
+    padding: 2rem;
+}
+
+.login .box-login .login-input-group .btn-login button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    background-color: rgb(2, 176, 37);
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.login .box-login .login-input-group .btn-login button:hover{
+    background-color: rgb(5, 199, 44);
+    transition: 0.4s;
+}
+
+.mess{
+    color: rgb(224, 22, 22);
+    text-align: center;
+}

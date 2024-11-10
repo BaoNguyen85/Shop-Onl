@@ -1,0 +1,49 @@
+.box{
+    margin: 5rem auto;
+    width: 40rem;
+    box-shadow: 1px 2px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.box form h1{
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box form .content{
+    width: 30rem;
+    margin-bottom: 3rem;
+}
+
+.box form .content .input{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.box form .content .input label{
+    margin-bottom: 1rem;
+}
+
+.box form .content .input input{
+    padding: 0.5rem 1rem;
+}
+
+.box form .content .input-btn{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.box form .content .input-btn .btn{
+    background: linear-gradient(90deg, #3470e1 0%, #9642fe 100%);
+    color: aliceblue;
+    width: 10rem;
+}
+
+.box form .content .input-btn .btn:hover{
+    background: linear-gradient(90deg, #9642fe 0%, #3470e1 100%);
+}

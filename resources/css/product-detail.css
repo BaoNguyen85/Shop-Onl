@@ -1,0 +1,142 @@
+.breadcrumb{
+    max-width: 1247px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.breadcrumb a{
+    color: black;
+    text-decoration: none;
+}
+
+.product-detail{
+    max-width: 1247px;
+    margin: 2rem auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.product-detail img{
+    width: 40rem;
+    height: 55rem;
+    object-fit: cover;
+}
+
+.product-detail .detail .btn-group{
+    display: flex;
+    gap: 1rem;
+}
+
+.product-detail .detail .btn-group .btn-addcart{
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 15rem;
+    height: 3.5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.product-detail .detail .btn-group .btn-addcart:hover{
+    border: 1px solid;
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.product-detail .detail .btn-group .btn-buynow{
+    border: 1px solid;
+    font-size: 18px;
+    font-weight: 500;
+    width: 10rem;
+    height: 3.5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: 0.4s;
+}
+
+.product-detail .detail .btn-group .btn-buynow:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.product-detail .detail .quantity-selector{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-detail .detail .quantity-selector .box-quantity .decrease-quantity,
+.product-detail .detail .quantity-selector .box-quantity .increase-quantity,
+.product-detail .detail .quantity-selector .box-quantity input{
+    background-color: white;
+    width: 20%;
+    border: 0.5px solid black;
+    border-radius: 0.4rem;
+    transition: 0.4s;
+}
+
+.product-detail .detail .quantity-selector .box-quantity .decrease-quantity:hover,
+.product-detail .detail .quantity-selector .box-quantity .increase-quantity:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.product-detail .detail .quantity-selector input{
+    text-align: center;
+}
+
+.related{
+    max-width: 1247px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.related h2{
+    margin: 4rem auto;
+}
+
+.related .list-products-related{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.related .list-products-related img{
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-products-related img:hover{
+    transform: scale(1.03);
+}
+.related .list-products-related .product{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.related .list-products-related .product a p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.related .list-products-related .product a{
+    text-decoration: none;
+    color: #323539;
+    font-size: 15px;
+}
+
+.related .list-products-related .product .title{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 600;
+}

@@ -1,0 +1,84 @@
+.order{
+    border: 1px solid;
+    width: 60%;
+    max-width: 1247px;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+
+.order h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.order .order-form{
+    margin: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 3rem;
+}
+
+.order .order-form .order-left .order-input,
+.order .order-form .order-right .order-input{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.order .order-form .order-left .order-select select{
+    height: 2.5rem;
+    padding: 0 1rem;
+
+}
+
+.order .list-product .title{
+    display: grid;
+    grid-template-columns: 30% 25% 10% 10% 25%;
+    text-align: center;
+}
+
+.order .list-product .product-order{
+    display: grid;
+    grid-template-columns: 30% 25% 10% 10% 25%;
+    text-align: center;
+    align-items: center;
+}
+
+.order .list-product .product-order .image{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.order .list-product .product-order .image img{
+    width: 7rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.order .result{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.order .btn-order{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.order .btn-order button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: rgb(2, 176, 37);
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.order .btn-order button:hover{
+    background-color: rgb(5, 199, 44);
+    transition: 0.4s;
+}

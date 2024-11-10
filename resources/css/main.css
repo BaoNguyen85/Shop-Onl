@@ -1,0 +1,328 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header img{
+    width: 3rem;
+}
+
+.header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header .container a{
+    color: #323539;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.header .container a:hover{
+    color: #5E55FA;
+    transition: 0.4s;
+}
+
+.header .btn-contact{
+    background: linear-gradient(90deg, #3470e1 0%, #9642fe 100%);
+    color: white !important;
+    padding: 1vh 3vh;
+    border-radius: 2vh;
+    /* transition: background 0.3s ease; */
+}
+
+.header .btn-contact:hover{
+    background: linear-gradient(90deg, #9642fe 0%, #3470e1 100%);
+}
+
+.banner1{
+    display: flex;
+}
+
+.banner1 img{
+    width: 50%;
+}
+
+.banner1 .img1 {
+    opacity: 0;
+    transform: translateX(-100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.banner1 .img2 {
+    opacity: 0;
+    transform: translateX(100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.banner1 .img1.animate, .banner1 .img2.animate {
+    opacity: 1;
+    transform: translateX(0); /* Khi thêm lớp .animate, phần tử sẽ di chuyển vào vị trí ban đầu */
+}
+
+.banner2 .title{
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.banner2 .title h1{
+    font-weight: 600;
+}
+
+.banner2 img{
+    width: 100%;
+}
+
+.banner2 {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.banner2.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner3 .title{
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.banner3 .title h1{
+    font-weight: 600;
+}
+
+.banner3 img{
+    width: 100%;
+}
+
+.banner3 {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.banner3.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/** Footer **/
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+    background-color: black;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.footer .col1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .col1 a{
+    text-decoration: none;
+    color: white;
+}
+
+/** Product **/
+.banner-sale img{
+    width: 100%;
+}
+.menu-product {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem auto;
+}
+.menu-product .menu-item{
+    border: 1px solid;
+    padding: 1.5rem 1rem;
+    width: 18rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #323539;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.menu-product .menu-item:hover{
+    color: aliceblue;
+    background-color: #323539;
+    transition: 0.3s;
+}
+
+.banner-sale {
+    opacity: 0;
+    transform: translateX(-100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.menu-product {
+    opacity: 0;
+    transform: translateX(100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.banner-sale.animate, .menu-product.animate {
+    opacity: 1;
+    transform: translateX(0); /* Khi thêm lớp .animate, phần tử sẽ di chuyển vào vị trí ban đầu */
+}
+
+.banner-sale img{
+    width: 100%;
+}
+.menu-product {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 3rem auto;
+}
+.menu-product .menu-item{
+    border: 1px solid;
+    padding: 1.5rem 1rem;
+    width: 18rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #323539;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.menu-product .menu-item:hover{
+    color: aliceblue;
+    background-color: #323539;
+    transition: 0.3s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 15rem;
+    /* padding: 10px; */
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+/* Hiển thị dropdown menu khi hover vào "Bộ sưu tập" */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Định dạng các liên kết trong dropdown menu */
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.banner-sale {
+    opacity: 0;
+    transform: translateX(-100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.menu-product {
+    opacity: 0;
+    transform: translateX(100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.list-products {
+    opacity: 0;
+    transform: translateY(100%); /* Ban đầu các phần tử sẽ nằm ngoài màn hình bên trái */
+    transition: all 1s ease-in-out;
+}
+
+.banner-sale.animate, .menu-product.animate {
+    opacity: 1;
+    transform: translateX(0); /* Khi thêm lớp .animate, phần tử sẽ di chuyển vào vị trí ban đầu */
+}
+
+.list-products.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.list-products{
+    max-width: 1247px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.list-products img{
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-products img:hover{
+    transform: scale(1.03);
+}
+
+.list-products .product{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-products .product a p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.list-products .product a{
+    text-decoration: none;
+    color: #323539;
+    font-size: 15px;
+}
+
+.list-products .product .title{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 600;
+}
+
+.mess{
+    color: rgb(224, 22, 22);
+    text-align: center;
+}

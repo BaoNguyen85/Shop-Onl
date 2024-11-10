@@ -1,0 +1,117 @@
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    width: 15rem;
+    /* padding: 10px; */
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+/* Hiển thị dropdown menu khi hover vào "Bộ sưu tập" */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Định dạng các liên kết trong dropdown menu */
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.banner-dreamer{
+    max-width: 1247px;
+    margin: 2rem auto;
+}
+
+.banner-dreamer img{
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-top-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+}
+
+.introduce{
+    max-width: 1247px;
+    margin: 5rem auto 0 auto;
+}
+
+.introduce h4{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.introduce h3{
+    width: 90%;
+    color: white; /* Màu chữ trắng */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Viền đen xung quanh chữ */
+    font-weight: 700;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.introduce p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.list-products-collection{
+    max-width: 1247px;
+    width: 100%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.list-products-collection img{
+    width: 25rem;
+    height: 40rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-products-collection img:hover{
+    transform: scale(1.02);
+}
+
+.list-products-collection .product-collection{
+    height: 44.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-products-collection .product-collection a p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.list-products-collection .product-collection a{
+    text-decoration: none;
+    color: #323539;
+    font-size: 15px;
+}
+
+.list-products-collection .product-collection .title-collection{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 600;
+}
